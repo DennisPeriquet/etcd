@@ -616,10 +616,6 @@ type member struct {
 
 func (m *member) GRPCURL() string { return m.grpcURL }
 
-func (m *member) CorruptionChecker() etcdserver.CorruptionChecker {
-	return m.s.CorruptionChecker()
-}
-
 type memberConfig struct {
 	name                        string
 	uniqNumber                  int64
